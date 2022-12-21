@@ -30,11 +30,11 @@ export default function Medicine({data}) {
     return(
         <div>
             <Navbar />
-            <div className="flex justify-center items-center w-full max-w-screen bg-slate-100 px-10">
+            <div className="flex justify-center items-center w-full max-w-screen bg-slate-100 pl-10">
                 <div className="flex lg:flex-row min-[350px]:flex-col justify-evenly items-start w-full h-full">
 
                     {/* Filter */}
-                    <div className="flex flex-col justify-start items-start px-5 py-10 space-y-5 max-h-full lg:w-1/4 min-[350px]:w-full min-[350px]:p-10  border-r-[3px]">
+                    <div className="flex flex-col justify-start items-start px-5 py-10 space-y-5 max-h-full lg:w-1/4 min-[350px]:w-full min-[350px]:p-10 border-r-[3px]">
                         <Breadcrumb aria-label="Default breadcrumb example" className="mb-8">
                             <Breadcrumb.Item
                                 href="/"
@@ -102,12 +102,12 @@ export default function Medicine({data}) {
                             </div>
                         </div>
                         <div className="flex w-full mb-5 mx-3">
-                            <button type="submit" className="w-full bg-blue-700 text-white font-semibold uppercase rounded-xl py-2 mt-3 mr-10">Search</button>
+                            <button type="submit" className="w-full bg-blue-700 hover:bg-blue-500 hover:drop-shadow-[0_20px_20px_rgba(0,0,0,0.3)] text-white font-semibold uppercase rounded-xl py-2 mt-3 mr-10 ">Search</button>
                         </div>
                     </div>
 
                     {/* Product */}
-                    <div className="flex flex-row flex-wrap justify-center items-start lg:w-3/4 min-[350px]:w-full min-[350px]:p-10 px-12 py-10">
+                    <div className="flex flex-row flex-wrap justify-start items-start lg:w-3/4 min-[350px]:w-full min-[350px]:p-10 lg:px-[6.1rem] py-10">
                         {data.map((d) => (
                           <div className="max-w-sm w-56 h-full mx-2 my-2 shadow-xl">
                             <Card>
